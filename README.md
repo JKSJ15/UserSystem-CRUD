@@ -1,0 +1,1 @@
+User Management System built with Java and MySQL. Provides CRUD (Create, Read, Update, Delete) operations to manage user records efficiently, showcasing integration between Java applications and relational databases.
