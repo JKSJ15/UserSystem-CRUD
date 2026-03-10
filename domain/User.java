@@ -3,13 +3,20 @@ package domain;
 import java.util.Objects;
 
 public class User {
-    private Integer id;
+    private int id;
     private String name;
     private String email;
-    private int cpf;
+    private String cpf;
     
-
- //equals and hashcode 
+//constructor
+ public User(int id, String name, String email, String cpf) {
+	 	this.id = id;
+		this.name = name;
+		this.email = email;
+		this.cpf = cpf;
+	}
+ 
+  //equals and hashcode 
   @Override
 public int hashCode() {
 	return Objects.hash(cpf, email, id, name);
@@ -51,10 +58,10 @@ public int hashCode() {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public int getCpf() {
+	public String getCpf() {
 		return cpf;
 	}
-	public void setCpf(int cpf) {
+	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
 }
