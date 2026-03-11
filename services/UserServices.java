@@ -1,6 +1,7 @@
 package services;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 import domain.User;
 import repository.UserRepository;
@@ -24,4 +25,10 @@ public class UserServices {
 	public static ArrayList<User> listAll(){
 		return UserRepository.listAll();
 	}
+	public static ArrayList<User> findByName(String name){
+		return UserRepository.findByName(name);
+	}
+	public static ArrayList<User> findById(int id){
+		return UserRepository.findById(id);
+	}  
 }
